@@ -101,15 +101,49 @@ input[type="file"] {
     display: none;
 }
 
+/* Footer Styles */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
-    position: relative;
+    background: #333;
+    color: #fff;
+    padding: 1rem 20px; /* Ensure padding on all sides */
+    position: fixed;
+    bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box; /* Include padding in the total width */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between text and icons */
+}
+
+.contact-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.contact-icons a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-icons img,
+.contact-icons svg {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.contact-icons img:hover,
+.contact-icons svg:hover {
+    transform: scale(1.1);
 }
 
 footer p {
     margin: 0;
+    white-space: nowrap; /* Prevent the text from wrapping */
 }
