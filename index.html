@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageScaler</title>
+    <link rel="stylesheet" href="css/imagescaler.css">
+</head>
+<body>
+    <header>
+        <h1>ImageScaler</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <div class="imagescaler-container">
+            <!-- Canvas Area on the Left -->
+            <div class="canvas-area">
+                <canvas id="imageCanvas"></canvas>
+            </div>
+            <!-- Button Container on the Right -->
+            <div class="button-container">
+                <button id="uploadButton">1. Upload Image</button>
+                <input type="file" id="fileInput" accept="image/*" />
+                <button id="uploadColorBarButton">2. Upload Color Bar</button>
+                <input type="file" id="colorBarInput" accept="application/json" />
+                <button id="drawArea">3. Draw Area</button>
+                <button id="factor">4. Apply Factor</button>
+                <button id="saveImg">5. Save to Local</button>
+                <button id="reset">Reset</button>
+                <!-- Scrollable Message Box Below the Canvas -->
+                <div id="messageBox" class="message-box"></div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Junting Chen</p>
+    </footer>
+
+    <script src="js/imagescaler.js"></script>
+</body>
+</html>

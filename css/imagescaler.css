@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Layout Container */
+.imagescaler-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Canvas Area on the Left */
+.canvas-area {
+    flex: 3; /* Make canvas larger relative to buttons */
+    max-width: 70%; /* Occupy most of the space */
+    height: 70vh; /* Adjust height as needed */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Scrollable Message Box Below the Canvas */
+.message-box {
+    margin: 0px auto 0;
+    width: 100%;
+    max-width: 1200px; /* Align with the container width */
+    height: 150px; /* Fixed height */
+    border: 1px solid #8ba2e4;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    overflow-y: auto; /* Scrollable content */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Container on the Right */
+.button-container {
+    flex: 1; /* Make buttons smaller relative to canvas */
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    gap: 10px; /* Space between buttons */
+    align-items: center;
+}
+/* Buttons Styling */
+button {
+    width: 100%; /* Full width of container */
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+button.used {
+    background-color: #28a745; /* Used state color */
+    color: white;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
